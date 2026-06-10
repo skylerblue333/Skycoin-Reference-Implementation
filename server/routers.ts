@@ -8,7 +8,8 @@ import { schoolRouter } from "./routers/school";
 import { gamingRouter } from "./routers/gaming";
 import { governanceRouter } from "./routers/governance";
 import { charityRouter } from "./routers/charity";
-import { marketplaceAdvancedRouter as nftMarketplaceRouter } from "./routers/marketplace-advanced";
+import { marketplaceRouter } from "./routers/marketplace";
+import { marketplaceAdvancedRouter } from "./routers/marketplace-advanced";
 import { phase21RealtimeRouter } from "./routers/phase21-realtime";
 import { phase22AiMlRouter } from "./routers/phase22-ai-ml";
 import { phase23AdminDashboardRouter } from "./routers/phase23-admin-dashboard";
@@ -31,7 +32,6 @@ import { featuresExpansionRouter } from "./routers/features-expansion";
 import { megaFeaturesRouter } from "./routers/mega-features";
 import { rulesEngineRouter } from "./routers/rules-engine";
 import { integrationsRouter } from "./routers/integrations";
-import { marketplaceAdvancedRouter } from "./routers/marketplace-advanced";
 import { uploadsRouter } from "./routers/uploads";
 import { seedRouter } from "./routers/seed";
 
@@ -78,7 +78,7 @@ export const appRouter = router({
   gaming: gamingRouter,
   governance: governanceRouter,
   charity: charityRouter,
-  marketplace: nftMarketplaceRouter,
+  marketplace: marketplaceRouter,
   analytics: analyticsRouter,
   trading: tradingRouter,
   escrow: escrowRouter,
